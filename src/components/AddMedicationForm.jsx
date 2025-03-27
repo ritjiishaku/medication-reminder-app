@@ -103,11 +103,11 @@ const AddMedicationForm = ({ onSave, onClose }) => {
           />
         </label>
 
-        <div className="flex justify-end gap-3">
-          <Button variant="outline" type="button" onClick={onClose}>
+        <div className="flex justify-bet gap-4">
+          <Button className="w-full" variant="text" type="button" onClick={onClose}>
             Cancel
           </Button>
-          <Button variant="primary" type="submit">
+          <Button className="w-full" variant="primary" type="submit">
             Save Medication
           </Button>
         </div>

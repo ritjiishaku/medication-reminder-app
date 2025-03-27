@@ -20,7 +20,7 @@ const MedicationCard = ({
   console.log('Medication data received:', medication);
 
   return (
-    <div className='w-full max-w-[400px] bg-neutral-200 shadow-md p-4 rounded-lg'>
+    <div className='w-full max-w-[400px] bg-neutral-100 shadow-md p-4 rounded-lg'>
       <div className='flex flex-col gap-4'>
         <div className='flex items-start justify-between w-full'>
           <div className='flex flex-col gap-2'>
@@ -61,15 +61,7 @@ const MedicationCard = ({
           </div>
 
           <div className='flex items-center gap-2'>
-            <span className='text-blue-500 text-base font-medium'>Status:</span>
-            <span className={`text-sm ${medication.status === 'Missed' ? 'text-red-700' : 'text-green-600'}`}>
-              {medication.status || 'Pending'}
-            </span>
-          </div>
-        </div>
-
-        <div className='flex items-center gap-2'>
-          <span className='text-neutral-800 text-sm font-medium'>Reminder</span>
+          <span className='text-neutral-700 text-md font-medium'>Reminder</span>
           <input
             type="checkbox"
             checked={medication.reminder || false}
@@ -77,13 +69,21 @@ const MedicationCard = ({
             className="w-5 h-5 accent-blue-500 cursor-pointer"
           />
         </div>
+        </div>
+
+        <div className='flex items-center gap-2'>
+            <span className='text-blue-500 text-base font-medium'>Status:</span>
+            <span className={`text-sm ${medication.status === 'Missed' ? 'text-red-700' : 'text-green-600'}`}>
+              {medication.status || 'Pending'}
+            </span>
+          </div>
       </div>
 
       <div className='flex items-center gap-8 w-full mt-4'>
         <Button className='w-full' variant='outline' onClick={() => onEdit(medication.id)}>
           Edit
         </Button>
-        <Button className='w-full bg-red-700' variant='accent' onClick={() => onDelete(medication.id)}>
+        <Button className='w-full' variant='accent' onClick={() => onDelete(medication.id)}>
           Delete
         </Button>
       </div>

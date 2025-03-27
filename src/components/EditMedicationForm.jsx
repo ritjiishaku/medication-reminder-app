@@ -66,7 +66,7 @@ const EditMedicationForm = ({ medication, onSave, onClose }) => {
       <h2 className="text-xl font-bold text-blue-700 mb-4">Edit Medication</h2>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-        
+
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">Drug Name*</span>
           <input
@@ -114,11 +114,11 @@ const EditMedicationForm = ({ medication, onSave, onClose }) => {
           />
         </label>
 
-        <div className="flex justify-end gap-3">
-          <Button variant="outline" type="button" onClick={onClose}>
+        <div className="flex justify-end gap-4">
+          <Button className="w-full" variant="text" type="button" onClick={onClose}>
             Cancel
           </Button>
-          <Button variant="primary" type="submit">
+          <Button className="w-full" variant="primary" type="submit">
             Save Changes
           </Button>
         </div>

@@ -10,13 +10,11 @@ const MedicationList = () => {
   const [showAddModal, setShowAddModal] = useState(false);
   const [editingMedication, setEditingMedication] = useState(null); // 2. Add state for editing
 
-  // Load medications from local storage
   useEffect(() => {
     const savedMedications = JSON.parse(localStorage.getItem("medications")) || [];
     setMedications(savedMedications);
   }, []);
 
-  // Save medications to local storage whenever they change
   useEffect(() => {
     if (medications.length > 0) {
       localStorage.setItem("medications", JSON.stringify(medications));
@@ -34,7 +32,6 @@ const MedicationList = () => {
     setShowAddModal(false);
   };
 
-  // 3. Add function to handle medication updates
   const updateMedication = (updatedMedication) => {
     setMedications(prev => 
       prev.map(med => 
@@ -58,7 +55,6 @@ const MedicationList = () => {
     );
   };
 
-  // 4. Add function to handle edit click
   const handleEdit = (medication) => {
     setEditingMedication(medication);
   };
@@ -68,7 +64,7 @@ const MedicationList = () => {
       {medications.length === 0 ? (
         <section className="flex flex-col items-center justify-center gap-8 px-6 py-24 bg-neutral-50 rounded-lg">
           <div className="text-center">
-            <h1 className="text-3xl font-medium text-blue-700 mb-4">
+            <h1 className="text-4xl font-medium text-blue-700 mb-4">
               Add Your Medication
             </h1>
             <p className="text-lg text-blue-600 mb-8">
@@ -83,7 +79,7 @@ const MedicationList = () => {
         <>
           <div className="flex justify-between items-center mb-8">
             <div>
-              <h1 className="text-3xl font-bold text-gray-800">Your Medications</h1>
+              <h1 className="text-4xl font-medium text-blue-700 mb-4">Your Medications</h1>
               <p className="text-gray-600">Track and manage your medications</p>
             </div>
             <Button variant="primary" onClick={() => setShowAddModal(true)}>
@@ -98,7 +94,7 @@ const MedicationList = () => {
                 medication={medication}
                 onDelete={handleDelete}
                 onToggleReminder={handleToggleReminder}
-                onEdit={() => handleEdit(medication)} // 5. Pass edit handler
+                onEdit={() => handleEdit(medication)}
               />
             ))}
           </div>
@@ -114,7 +110,6 @@ const MedicationList = () => {
         </Modal>
       )}
 
-      {/* 6. Add Edit Medication Modal */}
       {editingMedication && (
         <Modal onClose={() => setEditingMedication(null)}>
           <EditMedicationForm
