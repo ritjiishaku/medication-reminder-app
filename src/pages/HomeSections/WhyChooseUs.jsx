@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
         <div className="border-b-8 border-blue-700 w-64"></div>
       </div>
 
-      <div className='flex gap-6 flex-wrap '>
+      <div className='flex gap-6 flex-wrap'>
 
         <div className='flex flex-col justify-center gap-2 p-6 flex-1 min-w-md mx-auto rounded-xl shadow bg-neutral-50'>
           <h5 className='text-2xl font-bold text-center text-blue-900 leading-3xl'>Easy Medication Tracking</h5>
