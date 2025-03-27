@@ -22,7 +22,6 @@ const EditMedicationForm = ({ medication, onSave, onClose }) => {
     frequency: null,
   });
 
-  // Pre-fill form with existing medication data
   useEffect(() => {
     if (medication) {
       setFormData({
@@ -78,7 +77,6 @@ const EditMedicationForm = ({ medication, onSave, onClose }) => {
           />
         </label>
 
-        {/* Dosage */}
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">Dosage</span>
           <Select
@@ -90,7 +88,6 @@ const EditMedicationForm = ({ medication, onSave, onClose }) => {
           />
         </label>
 
-        {/* Date and Time */}
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">Date & Time*</span>
           <input

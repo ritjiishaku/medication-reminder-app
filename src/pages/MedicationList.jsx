@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import MedicationCard from "../components/MedicationCard";
 import AddMedicationForm from "../components/AddMedicationForm";
-import EditMedicationForm from "../components/EditMedicationForm"; // 1. Import the new form
+import EditMedicationForm from "../components/EditMedicationForm";
 import Modal from "../components/Modal";
 import Button from "../components/Button";
 
 const MedicationList = () => {
   const [medications, setMedications] = useState([]);
   const [showAddModal, setShowAddModal] = useState(false);
-  const [editingMedication, setEditingMedication] = useState(null); // 2. Add state for editing
+  const [editingMedication, setEditingMedication] = useState(null);
 
   useEffect(() => {
     const savedMedications = JSON.parse(localStorage.getItem("medications")) || [];

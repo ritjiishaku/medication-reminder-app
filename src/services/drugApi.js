@@ -1,4 +1,3 @@
-// src/services/drugApi.js
 const API_BASE = 'https://api.fda.gov/drug';
 
 export const searchDrugs = async (query) => {
