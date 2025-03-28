@@ -3,16 +3,32 @@ import Select from "react-select";
 import Button from "./Button";
 
 const dosages = [
+  { value: "5mg", label: "5mg" },
+  { value: "10mg", label: "10mg" },
+  { value: "20mg", label: "20mg" },
+  { value: "50mg", label: "50mg" },
   { value: "80mg", label: "80mg" },
+  { value: "100mg", label: "100mg" },
+  { value: "250mg", label: "250mg" },
   { value: "500mg", label: "500mg" },
+  { value: "750mg", label: "750mg" },
   { value: "1000mg", label: "1000mg" },
+  { value: "1500mg", label: "1500mg" },
 ];
 
 const frequencies = [
   { value: "Once a day", label: "Once a day" },
   { value: "Twice a day", label: "Twice a day" },
+  { value: "Three times a day", label: "Three times a day" },
+  { value: "Every 4 hours", label: "Every 4 hours" },
+  { value: "Every 6 hours", label: "Every 6 hours" },
   { value: "Every 8 hours", label: "Every 8 hours" },
+  { value: "Every 12 hours", label: "Every 12 hours" },
+  { value: "As needed", label: "As needed" },
+  { value: "Before meals", label: "Before meals" },
+  { value: "After meals", label: "After meals" },
 ];
+
 
 const AddMedicationForm = ({ onSave, onClose }) => {
   const [formData, setFormData] = useState({

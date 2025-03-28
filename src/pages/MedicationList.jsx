@@ -80,7 +80,6 @@ const MedicationList = () => {
           <div className="flex justify-between items-center mb-8">
             <div>
               <h1 className="text-4xl font-medium text-blue-700 mb-4">Your Medications</h1>
-              <p className="text-gray-600">Track and manage your medications</p>
             </div>
             <Button variant="primary" onClick={() => setShowAddModal(true)}>
               Add Medication
