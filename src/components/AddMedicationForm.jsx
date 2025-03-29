@@ -133,6 +133,15 @@ const AddMedicationForm = ({ onSave, onClose }) => {
         </label>
 
         <div className="flex flex-col sm:flex-row gap-3 mt-2 sm:mt-4">
+          
+          <Button 
+            className="w-full py-2 sm:py-3"
+            variant="primary" 
+            type="submit"
+          >
+            Save Medication
+          </Button>
+          
           <Button 
             className="w-full py-2 sm:py-3"
             variant="text" 
@@ -140,13 +149,6 @@ const AddMedicationForm = ({ onSave, onClose }) => {
             onClick={onClose}
           >
             Cancel
-          </Button>
-          <Button 
-            className="w-full py-2 sm:py-3"
-            variant="primary" 
-            type="submit"
-          >
-            Save Medication
           </Button>
         </div>
       </form>

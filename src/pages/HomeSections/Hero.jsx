@@ -15,10 +15,10 @@ function Hero() {
         </h3>
       </div>
 
-      <Link to='/medications' className="mt-4 md:mt-0">
+      <Link to='/medications' className="sm:auto mt-4 md:mt-0">
         <Button 
           variant='primary' 
-          className="px-8 py-3 text-lg md:px-10 md:py-4 md:text-xl"
+          className="px-8 py-3 text-lg md:px-10 md:py-4 md:text-xl w-full"
         >
           Get Started
         </Button>
