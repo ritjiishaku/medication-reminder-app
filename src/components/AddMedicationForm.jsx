@@ -67,63 +67,85 @@ const AddMedicationForm = ({ onSave, onClose }) => {
   };
 
   return (
-    <div className="p-6 bg-white rounded-lg shadow-md max-w-md w-full">
-      <h2 className="text-xl font-bold text-blue-700 mb-4">Add Medication</h2>
+    <div className="bg-white rounded-lg shadow-md w-full max-w-md mx-4 sm:mx-0 p-4 sm:p-6">
+      <h2 className="text-xl sm:text-2xl font-bold text-blue-700 mb-4 sm:mb-6">
+        Add Medication
+      </h2>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-       
-        <label className="flex flex-col">
-          <span className="text-sm font-medium text-gray-700">Drug Name*</span>
+      <form onSubmit={handleSubmit} className="flex flex-col gap-3 sm:gap-4">
+        <label className="flex flex-col gap-1">
+          <span className="text-sm sm:text-base font-medium text-gray-700">
+            Drug Name*
+          </span>
           <input
             required
             name="name"
             placeholder="Enter drug name"
             type="text"
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md p-2 sm:p-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
             onChange={handleChange}
             value={formData.name}
           />
         </label>
 
-        <label className="flex flex-col">
-          <span className="text-sm font-medium text-gray-700">Dosage</span>
+        <label className="flex flex-col gap-1">
+          <span className="text-sm sm:text-base font-medium text-gray-700">
+            Dosage
+          </span>
           <Select
             options={dosages}
             value={formData.dosage}
             onChange={(option) => setFormData({ ...formData, dosage: option })}
             isClearable
             isSearchable
+            className="text-sm sm:text-base"
+            classNamePrefix="select"
           />
         </label>
 
-        <label className="flex flex-col">
-          <span className="text-sm font-medium text-gray-700">Date & Time*</span>
+        <label className="flex flex-col gap-1">
+          <span className="text-sm sm:text-base font-medium text-gray-700">
+            Date & Time*
+          </span>
           <input
             required
             name="dueDateTime"
             type="datetime-local"
-            className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="border border-gray-300 rounded-md p-2 sm:p-3 text-sm sm:text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
             onChange={handleChange}
             value={formData.dueDateTime}
           />
         </label>
 
-        <label className="flex flex-col">
-          <span className="text-sm font-medium text-gray-700">Frequency</span>
+        <label className="flex flex-col gap-1">
+          <span className="text-sm sm:text-base font-medium text-gray-700">
+            Frequency
+          </span>
           <Select
             options={frequencies}
             value={formData.frequency}
             onChange={(option) => setFormData({ ...formData, frequency: option })}
             isClearable
             isSearchable
+            className="text-sm sm:text-base"
+            classNamePrefix="select"
           />
         </label>
 
-        <div className="flex justify-bet gap-4">
-          <Button className="w-full" variant="text" type="button" onClick={onClose}>
+        <div className="flex flex-col sm:flex-row gap-3 mt-2 sm:mt-4">
+          <Button 
+            className="w-full py-2 sm:py-3"
+            variant="text" 
+            type="button" 
+            onClick={onClose}
+          >
             Cancel
           </Button>
-          <Button className="w-full" variant="primary" type="submit">
+          <Button 
+            className="w-full py-2 sm:py-3"
+            variant="primary" 
+            type="submit"
+          >
             Save Medication
           </Button>
         </div>

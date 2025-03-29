@@ -17,8 +17,6 @@ const MedicationCard = ({
   onDelete = () => {}
 }) => {
   
-  console.log('Medication data received:', medication);
-
   const handleToggleReminder = () => {
     onToggleReminder(medication.id);
     const newReminderState = !medication.reminder;
@@ -28,72 +26,81 @@ const MedicationCard = ({
   };
 
   return (
-    <div className='w-full max-w-[400px] bg-neutral-100 shadow-md p-4 rounded-lg'>
-      <div className='flex flex-col gap-4'>
-        <div className='flex items-start justify-between w-full'>
-          <div className='flex flex-col gap-2'>
-            
-            <h2 className='text-blue-700 text-xl font-bold'>
+    <div className="w-full bg-white rounded-lg shadow-md overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow duration-200">
+      <div className="p-4 sm:p-6">
+        <div className="flex justify-between items-start gap-4">
+          <div className="flex-1">
+            <h2 className="text-lg sm:text-xl font-bold text-blue-700 mb-2 line-clamp-1">
               {medication.name || 'Medication Name'}
             </h2>
-
-            <div className='flex flex-col gap-1'>
-              <div className='flex items-center gap-2'>
-                <span className='text-neutral-800 text-sm font-medium'>Dosage:</span>
-                <span className='text-neutral-800 text-sm font-medium'>
+            
+            <div className="space-y-2">
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-600">Dosage:</span>
+                <span className="text-sm font-medium text-gray-800">
                   {medication.dosage || 'Not specified'}
                 </span>
               </div>
-
-              <div className='flex items-center gap-2'>
-                <span className='text-neutral-800 text-sm font-medium'>Time:</span>
-                <span className='text-neutral-800 text-sm font-medium'>
-                  {medication.time || '--:--'} 
+              
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-600">Time:</span>
+                <span className="text-sm font-medium text-gray-800">
+                  {medication.time || '--:--'}
                 </span>
                 {medication.timeFormat && (
-                  <span className='text-neutral-800 text-[10px] font-medium'>
+                  <span className="text-xs font-medium text-gray-500">
                     {medication.timeFormat}
                   </span>
                 )}
               </div>
-
+              
               {medication.frequency && (
-                <div className='flex items-center gap-2'>
-                  <span className='text-neutral-800 text-sm font-medium'>Frequency:</span>
-                  <span className='text-neutral-800 text-sm font-medium'>
+                <div className="flex items-center gap-2">
+                  <span className="text-sm text-gray-600">Frequency:</span>
+                  <span className="text-sm font-medium text-gray-800">
                     {medication.frequency}
                   </span>
                 </div>
               )}
             </div>
           </div>
-
-          <div className='flex items-center gap-2'>
-            <span className='text-neutral-700 text-md font-medium'>Reminder</span>
+          
+          <div className="flex items-center gap-2">
+            <span className="text-sm sm:text-base text-gray-700">Reminder</span>
             <input
               type="checkbox"
               checked={medication.reminder || false}
               onChange={handleToggleReminder}
-              className={`w-5 h-5 cursor-pointer ${medication.reminder ? 'accent-blue-700' : 'accent-blue-500'}`}
+              className={`w-5 h-5 cursor-pointer ${medication.reminder ? 'accent-blue-600' : 'accent-blue-300'}`}
             />
           </div>
         </div>
-
-        <div className='flex items-center gap-2'>
-          <span className='text-blue-500 text-base font-medium'>Status:</span>
-          <span className={`text-sm ${medication.status === 'Missed' ? 'text-red-700' : 'text-green-600'}`}>
+        
+        <div className="mt-4 flex items-center gap-2">
+          <span className="text-sm sm:text-base text-blue-500">Status:</span>
+          <span className={`text-sm sm:text-base font-medium ${medication.status === 'Missed' ? 'text-red-600' : 'text-green-600'}`}>
             {medication.status || 'Pending'}
           </span>
         </div>
       </div>
-
-      <div className='flex items-center gap-8 w-full mt-4'>
-        <Button className='w-full' variant='outline' onClick={() => onEdit(medication.id)}>
-          Edit
-        </Button>
-        <Button className='w-full' variant='accent' onClick={() => onDelete(medication.id)}>
-          Delete
-        </Button>
+      
+      <div className="bg-gray-50 px-4 sm:px-6 py-3 border-t border-gray-100">
+        <div className="grid grid-cols-2 gap-3">
+          <Button 
+            variant="outline" 
+            onClick={() => onEdit(medication)}
+            className="py-2 text-sm sm:text-base"
+          >
+            Edit
+          </Button>
+          <Button 
+            variant="accent" 
+            onClick={() => onDelete(medication.id)}
+            className="py-2 text-sm sm:text-base"
+          >
+            Delete
+          </Button>
+        </div>
       </div>
     </div>
   );

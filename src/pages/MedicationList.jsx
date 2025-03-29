@@ -60,33 +60,43 @@ const MedicationList = () => {
   };
 
   return (
-    <div className="p-6 max-w-7xl mx-auto">
+    <div className="p-4 md:p-6 max-w-7xl mx-auto">
       {medications.length === 0 ? (
-        <section className="flex flex-col items-center justify-center gap-8 px-6 py-24 bg-neutral-50 rounded-lg">
+        <section className="flex flex-col items-center justify-center gap-6 md:gap-8 p-6 md:py-24 bg-neutral-50 rounded-lg">
           <div className="text-center">
-            <h1 className="text-4xl font-medium text-blue-700 mb-4">
+            <h1 className="text-2xl md:text-4xl font-medium text-blue-700 mb-3 md:mb-4">
               Add Your Medication
             </h1>
-            <p className="text-lg text-blue-600 mb-8">
+            <p className="text-base md:text-lg text-blue-600 mb-6 md:mb-8">
               No medications added yet. Click below to get started!
             </p>
-            <Button variant="primary" onClick={() => setShowAddModal(true)}>
+            <Button 
+              variant="primary" 
+              onClick={() => setShowAddModal(true)}
+              className="px-6 py-2 md:px-8 md:py-3"
+            >
               Add Medication
             </Button>
           </div>
         </section>
       ) : (
         <>
-          <div className="flex justify-between items-center mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-8 gap-4">
             <div>
-              <h1 className="text-4xl font-medium text-blue-700 mb-4">Your Medications</h1>
+              <h1 className="text-2xl md:text-4xl font-medium text-blue-700">
+                Your Medications
+              </h1>
             </div>
-            <Button variant="primary" onClick={() => setShowAddModal(true)}>
+            <Button 
+              variant="primary" 
+              onClick={() => setShowAddModal(true)}
+              className="w-full md:w-auto px-6 py-2 md:px-8 md:py-3"
+            >
               Add Medication
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
             {medications.map((medication) => (
               <MedicationCard
                 key={medication.id}

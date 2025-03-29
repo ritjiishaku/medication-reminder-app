@@ -11,10 +11,10 @@ const Modal = ({ onClose, children }) => {
   return (
     <div
       id="modal-overlay"
-      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+      className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4"
       onClick={handleBackgroundClick}
     >
-      <div className="bg-white rounded-lg shadow-lg p-6 max-w-lg w-full relative">
+      <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg relative mx-auto">
         <Button
           variant="text"
           className="absolute top-4 right-4 text-neutral-900 hover:text-gray-500"
@@ -22,7 +22,9 @@ const Modal = ({ onClose, children }) => {
         >
           ✕
         </Button>
-        <div className="mt-4">{children}</div>
+        <div className="mt-4">
+          {children}
+        </div>
       </div>
     </div>
   );
