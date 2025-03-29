@@ -83,7 +83,7 @@ const MedicationCard = ({
           </span>
         </div>
       </div>
-      
+    
       <div className="bg-gray-50 px-4 sm:px-6 py-3 border-t border-gray-100">
         <div className="grid grid-cols-2 gap-3">
           <Button 
