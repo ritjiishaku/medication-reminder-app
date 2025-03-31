@@ -57,13 +57,6 @@ The **Medication Reminder App** is a web application designed to help users **tr
 
 ---
 
-## **Installation & Setup**  
-
-Follow these steps to run the **Medication Reminder App** locally:
-Contact
-  GitHub: ritjiishaku
-  Email: ritjiishaku@gmail.com  
-
 ### **Contact**
 - **GitHub:** - ritjiishaku
 - **Email:** - ritjiishaku@gmail.com
