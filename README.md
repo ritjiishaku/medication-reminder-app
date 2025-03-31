@@ -59,14 +59,16 @@ The **Medication Reminder App** is a web application designed to help users **tr
 
 ## **Installation & Setup**  
 
-Follow these steps to run the **Medication Reminder App** locally:  
+Follow these steps to run the **Medication Reminder App** locally:
+Contact
+  GitHub: ritjiishaku
+  Email: ritjiishaku@gmail.com  
 
-### **Clone the Repository**  
+### **Contact**
+- **GitHub:** - ritjiishaku
+- **Email:** - ritjiishaku@gmail.com
+
+### **Clone the Repository**
 ```sh
   git clone https://github.com/ritjiishaku/medication-reminder-app.git
   cd medication-reminder-app
-
-Contact
-  GitHub: ritjiishaku
-  Email: ritjiishaku@gmail.com
-
