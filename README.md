@@ -12,11 +12,11 @@ The **Medication Reminder App** is a web application designed to help users **tr
 - **Why Choose Us Section** – Showcases **three key benefits** of using the app.  
 - **Call-to-Action (CTA) Section** – Encourages users to start tracking their medication with a **CTA button**.  
 
-### **📋 Medication List Page**  
+### **Medication List Page**  
 - Displays **a list of medications** when added.  
 - If no medications are added, shows a **message with a button** to add a new one.  
 
-### **➕ Add Medication (Modal Popup)**  
+### **Add Medication (Modal Popup)**  
 - **Title** and input fields for:  
   - **Medication Name**  
   - **Dosage** (Dropdown)  
@@ -24,25 +24,25 @@ The **Medication Reminder App** is a web application designed to help users **tr
   - **Frequency** (Dropdown)  
   - **Save Button** to add medication.  
 
-### **💊 Medication Card**  
+### **Medication Card**  
 - Displays **drug name, dosage, time & date, and status**.  
 - **Toggle Reminder** – Enables medication alerts.  
 - **Edit Button** – Allows modifying medication details.  
 - **Delete Button** – Removes the medication.  
 
-### **✏️ Edit Medication (Modal Popup)**  
+### **Edit Medication (Modal Popup)**  
 - Prefilled input fields for **medication name, dosage, time & date, frequency**.  
 - **Save Changes Button** to update details.  
 
-### **🗑️ Delete Confirmation (Modal Popup)**  
+### **Delete Confirmation (Modal Popup)**  
 - Displays a **confirmation message** before deleting.  
 - **Delete Button** to confirm removal.  
 
-### **🔔 Set Reminder Message**  
+### **Set Reminder Message**  
 - **Popup notification** when the **reminder toggle** is turned on.  
 - Displays **medication name, dosage, and next scheduled time**.  
 
-### **🌐 Navigation**  
+### **Navigation**  
 - **Header (Present on All Pages)** – Contains **logo and navigation links** (Home, Medications).  
 - **Footer (Present on All Pages)** – Displays the **logo and copyright text**.  
 
@@ -61,12 +61,12 @@ The **Medication Reminder App** is a web application designed to help users **tr
 
 Follow these steps to run the **Medication Reminder App** locally:  
 
-### **1️⃣ Clone the Repository**  
+### **Clone the Repository**  
 ```sh
-git clone https://github.com/ritjiishaku/medication-reminder-app.git
-cd medication-reminder-app
+  git clone https://github.com/ritjiishaku/medication-reminder-app.git
+  cd medication-reminder-app
 
 Contact
-🔗 GitHub: ritjiishaku
-📧 Email: ritjiishaku@gmail.com
+  GitHub: ritjiishaku
+  Email: ritjiishaku@gmail.com
 
