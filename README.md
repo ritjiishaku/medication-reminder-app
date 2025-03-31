@@ -6,7 +6,7 @@ The **Medication Reminder App** is a web application designed to help users **tr
 
 ## **Features**  
 
-### ** Home Page**  
+### **Home Page**  
 - **Header** – Displays the app logo and navigation links.  
 - **Hero Section** – Includes a **main heading, subheading, and a CTA button** to encourage user engagement.  
 - **Why Choose Us Section** – Showcases **three key benefits** of using the app.  
