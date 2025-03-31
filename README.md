@@ -1,3 +1,4 @@
+```md
 # **Medication Reminder App**  
 
 The **Medication Reminder App** is a web application designed to help users **track, manage, and receive reminders** for their medications. With an intuitive interface and smart features, it ensures users **never miss a dose.**  
@@ -6,7 +7,7 @@ The **Medication Reminder App** is a web application designed to help users **tr
 
 ## **Features**  
 
-### ** Home Page**  
+### **🏠 Home Page**  
 - **Header** – Displays the app logo and navigation links.  
 - **Hero Section** – Includes a **main heading, subheading, and a CTA button** to encourage user engagement.  
 - **Why Choose Us Section** – Showcases **three key benefits** of using the app.  
@@ -63,9 +64,83 @@ Follow these steps to run the **Medication Reminder App** locally:
 
 ### **1️⃣ Clone the Repository**  
 ```sh
-git clone https://github.com/ritjiishaku/medication-reminder-app.git
+git clone https://github.com/your-username/medication-reminder-app.git
 cd medication-reminder-app
+```
 
-Contact
-🔗 GitHub: ritjiishaku
-📧 Email: ritjiishaku@gmail.com
+### **2️⃣ Install Dependencies**  
+```sh
+npm install
+```
+
+### **3️⃣ Start the Development Server**  
+```sh
+npm run dev
+```
+
+The app will be available at **http://localhost:5173**.  
+
+---
+
+## **Usage Guide**  
+
+### **🔹 Adding a Medication**  
+1. Click **Add Medication**.  
+2. Fill in **medication details**.  
+3. Click **Save Medication**.  
+
+### **🔹 Editing a Medication**  
+- Click the **Edit Button** on a medication card.  
+- Modify the details and **save changes**.  
+
+### **🔹 Deleting a Medication**  
+- Click the **Delete Button** and confirm removal.  
+
+### **🔹 Setting a Reminder**  
+- Toggle **Reminder On** to receive notifications.  
+
+---
+
+## **Screenshots**  
+
+| Home Page | Medication List | Add Medication |
+|-----------|----------------|---------------|
+| ![Home](https://via.placeholder.com/300) | ![List](https://via.placeholder.com/300) | ![Add](https://via.placeholder.com/300) |
+
+---
+
+## **Contributing**  
+
+### **How to Contribute**  
+1. **Fork** this repository.  
+2. **Create a new branch**:  
+   ```sh
+   git checkout -b feature-name
+   ```
+3. **Commit your changes**:  
+   ```sh
+   git commit -m "Added feature-name"
+   ```
+4. **Push to your branch**:  
+   ```sh
+   git push origin feature-name
+   ```
+5. **Open a Pull Request**.  
+
+---
+
+## **License**  
+
+This project is licensed under the **MIT License**.  
+
+---
+
+## **Contact**  
+
+🔗 **GitHub:** [your-username](https://github.com/your-username)  
+📧 **Email:** your.email@example.com  
+
+---
+
+🚀 **Stay on track with your medications using the Medication Reminder App!**
+```
