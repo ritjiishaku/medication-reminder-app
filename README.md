@@ -66,25 +66,6 @@ Follow these steps to run the **Medication Reminder App** locally:
 git clone https://github.com/ritjiishaku/medication-reminder-app.git
 cd medication-reminder-app
 
-Usage Guide
-🔹 Adding a Medication
-Click Add Medication.
-
-Fill in medication details.
-
-Click Save Medication.
-
-🔹 Editing a Medication
-Click the Edit Button on a medication card.
-
-Modify the details and save changes.
-
-🔹 Deleting a Medication
-Click the Delete Button and confirm removal.
-
-🔹 Setting a Reminder
-Toggle Reminder On to receive notifications.
-
 Contact
 🔗 GitHub: ritjiishaku
 📧 Email: ritjiishaku@gmail.com
