@@ -15,30 +15,30 @@ const WhyChooseUs = () => {
         <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center gap-4 hover:shadow-lg transition-shadow">
           <FaPills className="text-blue-700 text-6xl" />
           <h5 className="text-blue-900 text-xl md:text-2xl font-bold text-center">
-            Effortless Medication Management
+            Manage Your Medications with Ease
           </h5>
           <p className="text-neutral-700 text-base md:text-lg text-center">
-          Easily add, update, and track your medications in one place, making it simple to stay organized and never lose track of your prescriptions.
+            Keep all your medications in one organized place. Easily add, edit, and track your prescriptions so you never feel overwhelmed or forget an important dose.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center gap-4 hover:shadow-lg transition-shadow">
           <FaBell className="text-blue-700 text-6xl" />
           <h5 className="text-blue-900 text-xl md:text-2xl font-bold text-center">
-            Never Miss a Dose with Smart Reminders
+            Get Reminders, Stay on Track
           </h5>
           <p className="text-neutral-700 text-base md:text-lg text-center">
-          Easily add, update, and track your medications in one place, making it simple to stay organized and never lose track of your prescriptions.
+            Life gets busy, but your health should never take a backseat. Set up personalized reminders to take your medications on time, every time—no more missed doses.
           </p>
         </div>
 
         <div className="bg-white p-6 rounded-xl shadow-md flex flex-col items-center gap-4 hover:shadow-lg transition-shadow">
           <FaHeartbeat className="text-blue-700 text-6xl" />
           <h5 className="text-blue-900 text-xl md:text-2xl font-bold text-center">
-            Track Health Progress with Insights
+            Gain Insights into Your Health
           </h5>
           <p className="text-neutral-700 text-base md:text-lg text-center">
-          Monitor your medication history and track progress over time, so you can make informed decisions about your health and well-being.
+            Understand your medication history, track your progress, and recognize patterns in your health—helping you make better, more informed decisions every day.
           </p>
         </div>
       </div>
