@@ -64,11 +64,11 @@ const MedicationList = () => {
       {medications.length === 0 ? (
         <section className="flex flex-col items-center justify-center gap-6 md:gap-8 p-6 md:py-24 bg-neutral-50 rounded-lg">
           <div className="text-center">
-            <h1 className="text-2xl md:text-4xl font-medium text-blue-700 mb-3 md:mb-4">
+            <h1 className="text-3xl md:text-4xl font-medium text-blue-700 mb-3 md:mb-4">
               Add Your Medication
             </h1>
-            <p className="text-base md:text-lg text-blue-600 mb-6 md:mb-8">
-              No medications added yet. Click below to get started!
+            <p className="text-base md:text-lg text-blue-500 mb-6 md:mb-8">
+              You haven’t added any medications yet. Click the button below to start managing your medications!
             </p>
             <Button 
               variant="primary" 
