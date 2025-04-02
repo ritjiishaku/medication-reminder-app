@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-neutral-50 text-blue-500 border-b border-neutral-200 shadow-sm">
+    <nav className="fixed top-0 left-0 w-full bg-neutral-50 shadow-md z-50 bg-neutral-50 text-blue-500 border-b border-neutral-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
@@ -33,7 +33,7 @@ const Navbar = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-blue-500 hover:text-blue-700 focus:outline-none"
-              aria-expanded="false"
+              aria-expanded={isMenuOpen ? "true" : "false"}
             >
               <span className="sr-only">Open main menu</span>
               <svg

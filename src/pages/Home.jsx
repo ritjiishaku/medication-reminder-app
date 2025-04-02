@@ -5,7 +5,7 @@ import CTA from './HomeSections/CTA'
 
 const Home = () => {
   return (
-    <div>
+    <div className='min-h-screen pb-28 pt-16'>
       <Hero />
       <WhyChooseUs />
       <CTA />

@@ -60,7 +60,7 @@ const MedicationList = () => {
   };
 
   return (
-    <div className="p-4 md:p-6 max-w-7xl mx-auto">
+    <div className="pt-16 p-4 md:p-6 max-w-7xl mx-auto">
       {medications.length === 0 ? (
         <section className="flex flex-col items-center justify-center gap-6 md:gap-8 p-6 md:py-24 bg-neutral-50 rounded-lg">
           <div className="text-center">
@@ -81,7 +81,7 @@ const MedicationList = () => {
         </section>
       ) : (
         <>
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-8 gap-4">
+          <div className="pt-16 flex flex-col md:flex-row justify-between items-start md:items-center mb-6 md:mb-8 gap-4">
             <div>
               <h1 className="text-2xl md:text-4xl font-medium text-blue-700">
                 Your Medications
